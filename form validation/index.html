@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form align = "center">
+    <p id="errorname"></p>
+    Enter Name <input type="text" id="name"> <br> <br>
+
+    <p id="emailerror"></p>
+    Enter Email <input type="text" id="email"> <br> <br>
+    <p id="numerror"></p>
+
+    Enter Number <input type="text" id="num"> <br> <br>
+    <p id="passerror"></p>
+
+    Enter Password <input type="text" id="pass"> <br> <br>
+    <p id="cpasserror"></p>
+
+    Enter Confirm Password <input type="text" id="cpass"> <br> <br>
+    <input type="submit" value="Sign-up"
+    onclick="return validate()">
+   
+  </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
