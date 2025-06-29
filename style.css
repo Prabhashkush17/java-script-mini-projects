@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  padding-top: 50px;
+}
+
+.dice-container {
+  margin: 20px;
+}
+
+.dice-container img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
