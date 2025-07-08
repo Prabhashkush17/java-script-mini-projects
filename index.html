@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roll the Dices</title>
+    <title>EMI Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Roll the Dice!</h1>
-  <div class="dice-container">
-    <img id="die1" src="dice-img1.png" alt="Die 1">
-    <img id="die2" src="dice-img1.png" alt="Die 2">
-  </div>
-  <button onclick="rollDice()">Roll</button>
-  <p id="result">Sum: 2</p>
+    <div class="container">
+      <div class="header">
+        <h1> EMI CALCULATOR </h1>
+      </div>
+
+      <div class="loanamt">
+       <label class="loanamtinfo"> 
+         Lone Amount
+       </label>
+       <input type="text" id="loanamtinput" placeholder=" Enter Loan Amount">
+      </div>
+
+       <div class="interestrate">
+       <label class="intrestrateinfo"> 
+         Intrest Rate
+       </label>
+       <input type="number" id="intrestrateinput" placeholder=" Enter Intrest Rate">
+      </div>
+
+       <div class="timeinterval">
+       <label class="timeintervalinfo"> 
+         Months To Pay
+       </label>
+       <input type="number" id="timeintervalinput" placeholder=" Enter Months to Pay">
+      </div>
+
+      <div class="calculatebtn">
+        <button id="Calculate" onclick="return calculate()">
+            Calculate
+        </button>
+      </div>
+
+      <div class="result">
+        <p>
+            Your EMI is :  <span id="emi"></span>
+        </p>
+      </div>
+
+    </div>
 
 
 
-  <script src="script.js"></script>
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
-
